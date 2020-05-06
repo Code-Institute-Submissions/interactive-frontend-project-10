@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Covid-19 stats API</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE"></script>
+</head>
+
+<body>
+  <div>
+    <form>
+      <h2>COVID-19 current stats around the world</h2>
+      <select id="countries" onchange="getCountryFacts()">
+        <option value="">Country</option>
+        <option value="ES">Spain</option>
+        <option value="IE">Ireland</option>
+        <option value="AR">Argentina</option>
+        <option value="MU">Mauritius</option>
+        <option value="JP">Japan</option>
+        <option value="LV">Latvia</option>
+        <option value="AL">Albania</option>
+      </select>
+    </form><p>
+  </div><p>
+  <div id="panel"></div><p>
+  <div id="map"></div>
+</body>
+
+<script type="text/javascript" src="assets/js/stats.js"></script>
+<script type="text/javascript" src="assets/js/map.js"></script>
+</html>
