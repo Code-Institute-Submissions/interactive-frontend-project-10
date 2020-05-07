@@ -42,6 +42,10 @@ function getCountryFacts() {
     $("#panel").append("<li>Population: " + result.population + "</li>");
     $("#panel").append("<li>TimeZone: " + result.timezones[0] + "</li>");
 
+    getCountryPicture(result.name, result.capital, "symbol");
+    getCountryPicture(result.name, result.capital, "building");
+    getCountryPicture(result.name, result.capital, "park");
+
     initMap(result.latlng[0], result.latlng[1]);
   });
 }

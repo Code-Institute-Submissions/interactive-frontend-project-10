@@ -3,8 +3,13 @@ div {
   text-align: center;
 }
 .flag {
-  width: 100px;
-  height: auto;
+  width: 150px;
+  height: 100%;
+  border: 2px solid black;
+}
+.picture {
+  width: 300px;
+  height: 100%;
   border: 1px solid black;
 }
 #map {
