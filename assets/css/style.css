@@ -1,18 +1,82 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 div {
   margin: 0 auto;
   text-align: center;
 }
-.flag {
-  width: 150px;
-  height: 100%;
-  border: 2px solid black;
+
+hr {
+  border: 2px solid grey;
 }
+
+#map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#countryflag {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+#countryinfo {
+  padding-top: 40px;
+  margin-left: 20%;
+  text-align: left;
+  line-height: 2.5;
+  letter-spacing: 1.3px;
+}
+
+#countrystats {
+  padding: 15px;
+  width: 250px;
+  vertical-align: middle;
+  border: 2px solid navy;
+  border-radius: 5px;
+}
+
+.flag {
+  width: 120px;
+  height: 100%;
+  border: 1px solid black;
+}
+
 .picture {
   width: 300px;
   height: 100%;
   border: 1px solid black;
 }
-#map {
-  width: 600px;
-  height: 400px;
+
+.avatar-world {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.avatar-country {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 100%;
+}
+
+.infosign {
+  width: 100%;
+  height: 450px;
+  border: 1px solid black;
+}
+
+.leftbar {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 2px solid black;
 }

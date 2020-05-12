@@ -3,32 +3,48 @@
 
 <head>
   <title>Covid-19 stats API</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/js/stats.js"></script>
+  <script type="text/javascript" src="assets/js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE"></script>
 </head>
 
 <body>
-  <div>
-    <form>
-      <h2>COVID-19 current stats around the world</h2>
-      <select id="countries" onchange="getCountryFacts()">
-        <option value="">Country</option>
-        <option value="ES">Spain</option>
-        <option value="IE">Ireland</option>
-        <option value="AR">Argentina</option>
-        <option value="MU">Mauritius</option>
-        <option value="JP">Japan</option>
-        <option value="LV">Latvia</option>
-        <option value="AL">Albania</option>
-      </select>
-    </form><p>
-  </div><p>
-  <div id="panel"></div><p>
-  <div id="map"></div>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <div id="worldstats"></div>
+        <div id="covidsign"></div>
+        <script>
+          getWorldStats();
+        </script>
+      </div>
+      <div class="col-4 leftbar">
+        <p>
+        <form>
+          <select id="countries" onchange="getCountryStats()">
+            <option value="">Country</option>
+            <option value="ES">Spain</option>
+            <option value="IE">Ireland</option>
+            <option value="AR">Argentina</option>
+            <option value="MU">Mauritius</option>
+            <option value="JP">Japan</option>
+            <option value="LV">Latvia</option>
+            <option value="AL">Albania</option>
+          </select>
+        </form>
+        <div id="countryflag"></div>
+        <div id="countrystats"></div>
+        <div id="countryinfo"></div>
+      </div>
+      <div class="col-5 leftbar">
+        <div id="map"></div>
+      </div>
+    </div> <!-- End of row -->
+  </section>
 </body>
 
-<script type="text/javascript" src="assets/js/stats.js"></script>
-<script type="text/javascript" src="assets/js/map.js"></script>
-<script type="text/javascript" src="assets/js/pictures.js"></script>
 </html>
