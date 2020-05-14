@@ -1,39 +1,67 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# COVID-19 UPDATE APP
 
-Welcome santi-rodri,
+The Covid-19 Update App is an app that let the general public get **the most updated stats** and figures regarding the **CoronaVirus** world pandemic that started at the end of 2019.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## UX
 
-## Gitpod Reminders
+This web app has been designed with a **mobile-first** approach in mind, as most people nowadays access the Internet by using their smart phones.
+Special attention has also been paid to make the app **responsive** to different screen sizes so the content can be viewed in a clear and well structured way.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Features
 
-`python3 -m http.server`
+The app has been divided into 3 different areas, resulting in 3 vertical panels:
 
-A blue button should appear to click: *Make Public*,
+### Left Panel:
++ World most up-to-date pandemic stats
 
-Another blue button should appear to click: *Open Browser*.
++ Covid-19 guideline about symptoms and recommendations
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Middle Panel:
++ Dropdown **menu** with all world countries to choose from
 
-A blue button should appear to click: *Make Public*,
++ Once a country has been chosen, 3 pieces of data will show up:
+1. Country Flag
+2. Specific Covid-19 stats for the country in question
+3. General information about the country
 
-Another blue button should appear to click: *Open Browser*.
+### Right Panel:
++ Google Maps location of the country in a global map.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+  
+## Technologies used
+ 
+ - **HTML5** (Page structure)
+ 
+ - **CSS3** (Styling)
+ 
+ - **Google Fonts** (Font styling)
+ 
+ - **Bootstrap** (Display responsiveness)
+ 
+ - **Javascript** (Interactivity through the use of 3 free APIs)
+ 
+ - **jQuery** (DOM manipulation)
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+## Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- The website has been tested for **reponsiveness** for all different screen sizes, using the Google Chrome built-in Inspector tool.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- 3 different **APIs** have been used to provide interactivity:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
++ https://api.covid19api.com , to obtain the most updated Covid-19 stats (world + countries)
++ https://restcountries.eu , to get general info about countries
++ GoogleMaps-API , to be able to show the location of each country on a world map
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
+## Deployment
 
-Happy coding!
+The entire project has been deployed to **Github Pages**, making use of the available GitPod interface.
+
+
+## Media
+
+ - **Pictures**: the Covid-19 info poster is freely available to everyone by the irish government.
+
+ - **Icons**: the 4 Covid-19 icons used come from the free icons platform [FlatIcon.com](https://www.flaticon.com)
+
